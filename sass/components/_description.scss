@@ -1,0 +1,30 @@
+.description {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  &__header {
+    font-weight: 700;
+    margin: 0;
+  }
+
+  &__icon-background {
+    background-color: rgba(245, 244, 250, 1);
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+
+  p {
+    color: var(--uppercontacts-color);
+    line-height: 1.714;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    width: 270px;
+    height: 75px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+}

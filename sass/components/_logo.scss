@@ -1,0 +1,42 @@
+.header .logo {
+  font-family: "Railway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  cursor: pointer;
+  display: flex;
+  text-decoration: none;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer .logo {
+  display: inline-flex;
+  font-family: "Railway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  align-items: center;
+}
+
+.logo {
+  .logo__theme {
+    color: var(--hilight-color);
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 30.52px;
+    letter-spacing: 0.03em;
+  }
+  .logo__upper-style {
+    color: var(--logo-color);
+  }
+  .logo__lower-style {
+    color: var(--headerbackground-color);
+  }
+}

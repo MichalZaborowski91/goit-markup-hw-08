@@ -1,0 +1,35 @@
+.clients {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0;
+  padding-right: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  &:last-child {
+    padding-right: 0;
+  }
+  &__logo {
+    fill: var(--smedia-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__background {
+    border: 1px solid var(--smedia-color);
+    border-radius: 4px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      border: 1px solid var(--hilight-color);
+      cursor: pointer;
+
+      .clients__logo {
+        fill: var(--hilight-color);
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.team {
+  &__social-media {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 30px;
+  }
+}
+
+.social-media {
+  &__background {
+    display: flex;
+    border-radius: 50px;
+    margin-bottom: 0;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: var(--hilight-color);
+
+      .social-media__icon {
+        fill: var(--headerbackground-color);
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+  }
+  &__icon {
+    fill: var(--smedia-color);
+  }
+
+  & > li {
+    height: 44px;
+  }
+}

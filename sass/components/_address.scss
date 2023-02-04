@@ -1,0 +1,21 @@
+.address {
+  display: flex;
+  flex-direction: column;
+
+  > p {
+    display: flex;
+    color: var(--headerbackground-color);
+    font-style: normal;
+    margin-bottom: 9px;
+    margin-top: 0;
+  }
+
+  > a {
+    color: var(--address-color);
+    font-style: normal;
+    margin-right: auto;
+    margin-bottom: 9px;
+    font-weight: 400;
+    text-decoration: none;
+  }
+}
