@@ -11,7 +11,9 @@
 @media (max-width: 767px) {
   .footer {
     background-color: var(--akcent-color);
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-right: auto;
   }
 }
