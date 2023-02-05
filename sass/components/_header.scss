@@ -1,18 +1,4 @@
-@media (max-width: 767px) {
-  .header {
-    margin: 0 auto;
-    .container {
-      margin: 0 auto;
-
-      display: flex;
-      height: 60px;
-      align-items: center;
-      flex-direction: row;
-    }
-  }
-}
-
-/*.header {
+.header {
   display: flex;
   align-items: center;
   background-color: var(--headerbackground-color);
@@ -23,4 +9,4 @@
     align-items: center;
     background-color: var(--headerbackground-color);
   }
-}*/
+}

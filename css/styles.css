@@ -21,7 +21,7 @@ body {
   position: relative;
 }
 
-.header .logo {
+.page-header .logo {
   font-family: "Railway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -33,7 +33,7 @@ body {
   justify-content: flex-start;
   align-items: center;
 }
-.footer .logo {
+.page-footer .logo {
   display: inline-flex;
   font-family: "Railway", sans-serif;
   font-weight: 700;

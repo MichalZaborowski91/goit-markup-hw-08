@@ -40,20 +40,3 @@
     margin-top: 0;
   }
 }
-.secondary-header {
-  font-weight: 700;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 42px;
-  letter-spacing: 0.03em;
-}
-@media (max-width: 767px) {
-  .secondary-header {
-    display: none;
-  }
-  .gallery {
-    display: none;
-  }
-}

@@ -1,4 +1,4 @@
-/*.footer {
+.footer {
   background-color: var(--akcent-color);
   height: 252px;
   width: 1600px;
@@ -6,14 +6,5 @@
 
   .container {
     display: flex;
-  }
-}*/
-@media (max-width: 767px) {
-  .footer {
-    background-color: var(--akcent-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-right: auto;
   }
 }
