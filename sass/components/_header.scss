@@ -1,4 +1,15 @@
-.header {
+@media (max-width: 767px) {
+  .header {
+    margin: 0 auto;
+    .container {
+      display: flex;
+      height: 60px;
+      align-items: center;
+    }
+  }
+}
+
+/*.header {
   display: flex;
   align-items: center;
   background-color: var(--headerbackground-color);
@@ -9,4 +20,4 @@
     align-items: center;
     background-color: var(--headerbackground-color);
   }
-}
+}*/

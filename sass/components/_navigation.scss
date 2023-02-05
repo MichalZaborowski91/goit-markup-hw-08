@@ -46,3 +46,8 @@
     background-size: contain;
   }
 }
+@media (max-width: 767px) {
+  .navigation {
+    display: none;
+  }
+}

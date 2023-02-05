@@ -10,6 +10,11 @@
   justify-content: flex-start;
   align-items: center;
 }
+@media (max-width: 767px) {
+  .header .logo {
+    padding-left: 15px;
+  }
+}
 
 .footer .logo {
   display: inline-flex;
