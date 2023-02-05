@@ -1,6 +1,6 @@
 .main-section {
   list-style: none;
-  letter-spacing: 0.06em;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,4 +55,17 @@
     justify-content: center;
     margin-left: 0;
   }
+}
+.main-header {
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 26px;
+  color: var(--headerbackground-color);
+  text-align: center;
+  line-height: 42px;
+  letter-spacing: 0.06em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }

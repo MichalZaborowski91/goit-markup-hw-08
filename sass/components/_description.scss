@@ -1,9 +1,10 @@
 .description {
+  width: 450px;
   display: flex;
+  flex-direction: column;
   list-style: none;
   gap: 30px;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 auto;
   padding-left: 0;
 
   &__header {
@@ -15,6 +16,8 @@
     background-color: rgba(245, 244, 250, 1);
     border-radius: 4px;
     margin-bottom: 30px;
+    width: 450px;
+    height: 120px;
   }
 
   p {
