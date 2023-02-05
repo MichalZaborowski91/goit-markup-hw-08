@@ -1,6 +1,8 @@
 .address {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  margin-left: 115px;
 
   > p {
     display: flex;
@@ -8,14 +10,19 @@
     font-style: normal;
     margin-bottom: 9px;
     margin-top: 0;
+    width: 251px;
+    justify-content: center;
   }
 
   > a {
     color: var(--address-color);
     font-style: normal;
-    margin-right: auto;
+
     margin-bottom: 9px;
     font-weight: 400;
     text-decoration: none;
+    width: 232px;
+    display: flex;
+    justify-content: center;
   }
 }

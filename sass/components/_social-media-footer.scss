@@ -2,10 +2,12 @@
   &__header {
     text-transform: uppercase;
     color: var(--headerbackground-color);
-    padding-top: 72px;
-    margin-left: 70px;
+    padding-top: 60px;
+    margin-left: 167px;
     font-weight: 700;
     margin-top: 0;
+    width: 146px;
+    text-align: center;
   }
   &__social-media-background {
     display: flex;
@@ -20,15 +22,16 @@
       background-color: var(--hilight-color);
     }
   }
+
   &__social-media {
     display: flex;
     list-style: none;
-    justify-content: space-between;
+    gap: 10px;
     align-items: center;
-    margin-left: 70px;
+    margin: 0 auto;
     margin-top: 20px;
     padding-left: 0;
-    gap: 10px;
+    justify-content: center;
   }
   &__social-media-icon {
     fill: var(--headerbackground-color);
