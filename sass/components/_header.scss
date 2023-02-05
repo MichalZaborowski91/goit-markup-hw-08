@@ -1,11 +1,14 @@
 .header {
+  width: 480px;
   display: flex;
   align-items: center;
   background-color: var(--headerbackground-color);
   border-bottom: 1px solid #ececec;
 
   .container {
+    height: 60px;
     display: flex;
+
     align-items: center;
     background-color: var(--headerbackground-color);
   }
