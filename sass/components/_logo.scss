@@ -13,18 +13,16 @@
 
 .footer .logo {
   width: 154px;
-  display: inline-flex;
+  display: flex;
   font-family: "Railway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   cursor: pointer;
   text-decoration: none;
-  margin-top: 60px;
-  margin-bottom: 20px;
-  margin-right: 0;
+
   text-decoration: none;
   align-items: center;
-  margin-left: 163px;
+  margin: 60px auto 20px;
   justify-content: center;
 }
 
