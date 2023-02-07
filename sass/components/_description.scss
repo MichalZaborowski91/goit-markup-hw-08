@@ -1,8 +1,7 @@
 .description {
-  width: 100vw;
   display: flex;
-
-  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: column;
   list-style: none;
   gap: 30px;
   margin: 0 auto;
@@ -10,7 +9,7 @@
 
   &__header {
     font-weight: 700;
-    width: 100vw;
+
     text-align: center;
     margin: 0 auto;
   }
