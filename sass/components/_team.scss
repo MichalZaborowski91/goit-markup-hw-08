@@ -3,6 +3,7 @@
 
   max-width: 480px;
   background-color: var(--buttons-color);
+  margin: 0 auto;
 
   &__img {
     width: 100%;
@@ -54,6 +55,7 @@
   }
 }
 .team-header {
+  width: 100vw;
   font-weight: 700;
   text-align: center;
   margin: 0 auto;
