@@ -233,3 +233,9 @@
 .list-input {
   margin-right: 40px;
 }
+@media (min-width: 481px) and (max-width: 768px) {
+  .modal-window {
+    top: 208px;
+    margin: 0 auto;
+  }
+}

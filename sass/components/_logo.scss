@@ -42,3 +42,9 @@
     color: var(--headerbackground-color);
   }
 }
+@media (min-width: 481px) and (max-width: 768px) {
+  .header .logo {
+    padding-left: 0;
+    margin-left: 15px;
+  }
+}

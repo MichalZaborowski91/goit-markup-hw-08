@@ -1,6 +1,5 @@
 .header {
   width: 100vw;
-
   background-color: var(--headerbackground-color);
   border-bottom: 1px solid #ececec;
 
@@ -10,5 +9,16 @@
     width: 100vw;
     align-items: center;
     background-color: var(--headerbackground-color);
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .header {
+    min-width: 580px;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      height: 80px;
+      min-width: 580px;
+    }
   }
 }

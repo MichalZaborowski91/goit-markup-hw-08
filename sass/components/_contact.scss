@@ -1,5 +1,5 @@
 .contact-header {
-  display: none;
+  display: flex;
   align-items: center;
   gap: 30px;
 
@@ -29,5 +29,19 @@
     fill: var(--uppercontacts-color);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+@media (max-width: 480px) {
+  .contact-header {
+    display: none;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .contact-header {
+    display: block;
+    margin-right: 15px;
   }
 }

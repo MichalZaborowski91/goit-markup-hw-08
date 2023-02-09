@@ -118,3 +118,11 @@
     color: var(--hilight-color);
   }
 }
+@media (min-width: 481px) {
+  .menu-toggle {
+    display: none;
+  }
+  .menu-container {
+    display: none;
+  }
+}

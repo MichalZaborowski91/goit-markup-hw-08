@@ -65,3 +65,17 @@
   letter-spacing: 0.03em;
   padding-top: 60px;
 }
+@media (min-width: 481px) and (max-width: 768px) {
+  .team {
+    &__figure {
+      max-width: 354px;
+    }
+    &__list {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 0;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}
