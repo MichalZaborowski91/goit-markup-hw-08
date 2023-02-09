@@ -38,3 +38,16 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media (min-width: 481px) and (max-width: 768px) {
+  .description {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 590px;
+
+    &__list {
+      width: 354px;
+      margin: 0 auto;
+    }
+  }
+}

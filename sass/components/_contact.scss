@@ -37,11 +37,15 @@
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
-  .container {
+  /*.container {
     max-width: 768px;
-  }
+  }*/
   .contact-header {
     display: block;
     margin-right: 15px;
+
+    &__email {
+      margin-bottom: 10px;
+    }
   }
 }

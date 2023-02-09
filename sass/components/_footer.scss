@@ -1,7 +1,25 @@
 .footer {
+  display: block;
   background-color: var(--akcent-color);
   width: 100vw;
   margin-right: auto;
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .footer {
+    margin: 0 0;
+    max-width: 768px;
+    align-items: center;
+    min-width: 590px;
+    .container {
+      width: 100vw;
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__data {
+      margin: 0 auto;
+    }
+  }
 }

@@ -37,3 +37,10 @@
     fill: var(--headerbackground-color);
   }
 }
+@media (min-width: 481px) and (max-width: 768px) {
+  .footer {
+    &__header {
+      padding-top: 35px;
+    }
+  }
+}
