@@ -1,5 +1,4 @@
 .gallery {
-  width: 100vw;
   list-style: none;
   display: none;
   flex-wrap: wrap;
@@ -16,14 +15,14 @@
 
 .gallery__style {
   position: relative;
-  width: 100vw;
+  width: 370px;
   height: 294px;
   > .gallery__label {
     position: absolute;
     display: flex;
     left: 0;
     bottom: 0;
-    width: 100vw;
+    width: 370px;
     height: 70px;
     text-transform: uppercase;
     font-size: 24px;
@@ -50,4 +49,12 @@
   font-size: 36px;
   line-height: 42px;
   letter-spacing: 0.03em;
+}
+@media (min-width: 769px) {
+  .gallery {
+    display: flex;
+  }
+  .secondary-header {
+    display: block;
+  }
 }

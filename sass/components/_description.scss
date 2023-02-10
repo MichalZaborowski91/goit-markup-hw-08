@@ -42,12 +42,35 @@
   .description {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+
     min-width: 768px;
+    margin: 0 auto;
 
     &__list {
       width: 354px;
       margin: 0 auto;
     }
+  }
+}
+@media (min-width: 769px) {
+  .description {
+    margin-top: 0;
+    margin-bottom: 0;
+    flex-direction: row;
+
+    &__header {
+      margin: 0;
+      text-align: start;
+    }
+
+    &__list {
+      width: 270px;
+    }
+    &__icon {
+      x: 100px;
+    }
+  }
+  .container {
+    max-width: 1200px;
   }
 }

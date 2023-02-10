@@ -158,7 +158,7 @@
 }
 
 .backdrop {
-  width: 100vw;
+  width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   position: absolute;
@@ -239,6 +239,12 @@
     margin: 0 auto;
   }
   .backdrop {
-    min-width: 590px;
+    min-width: 100%;
+  }
+}
+@media (min-width: 769px) {
+  .modal-window {
+    margin: 0 auto;
+    min-width: 528px;
   }
 }
