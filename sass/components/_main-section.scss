@@ -45,6 +45,14 @@
   }
 }
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .main-section {
+    background-image: url("../images/mobile_background_x2_img.jpg");
+  }
+}
+
 .main-header {
   font-family: "Roboto";
   font-weight: 900;
@@ -79,6 +87,14 @@
       url("../images/tablet_background_img.jpg");
     min-width: 768px;
   }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .main-section {
+      background-image: url("../images/tablet_background_x2_img.jpg");
+    }
+  }
 }
 
 @media (min-width: 769px) {
@@ -88,9 +104,17 @@
         rgba(47, 48, 58, 0.4) 0%,
         rgba(47, 48, 58, 0.4) 100%
       ),
-      url("../images/background_img.jpg");
+      url("../images/desktop_background_img.jpg");
     max-width: 1200px;
     margin: 0 auto;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .main-section {
+      background-image: url("../images/desktop_background_x2_img.jpg");
+    }
   }
 
   .container {
