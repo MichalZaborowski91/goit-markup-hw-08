@@ -3,7 +3,6 @@
   list-style: none;
   padding-top: 32px;
   padding-bottom: 32px;
-
   gap: 46px;
   justify-content: space-evenly;
   margin-top: 0;
@@ -22,6 +21,7 @@
       color: var(--hilight-color);
     }
   }
+
   &__underline-agency::after {
     position: absolute;
     top: 76px;
@@ -33,6 +33,7 @@
     content: "";
     background-size: contain;
   }
+
   &__underline-portfolio::after {
     position: absolute;
     top: 76px;
@@ -45,17 +46,20 @@
     background-size: contain;
   }
 }
+
 @media (max-width: 480px) {
   .navigation {
     display: none;
   }
 }
+
 @media (min-width: 481px) and (max-width: 768px) {
   .navigation {
     padding-right: 0;
     padding-left: 0;
   }
 }
+
 @media (min-width: 769px) {
   .navigation {
     padding-right: 364px;

@@ -24,3 +24,17 @@
     justify-content: center;
   }
 }
+
+@media (min-width: 769px) {
+  .address {
+    margin: 0;
+
+    > p {
+      justify-content: flex-start;
+    }
+
+    > a {
+      justify-content: flex-start;
+    }
+  }
+}

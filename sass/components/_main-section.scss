@@ -1,6 +1,5 @@
 .main-section {
   list-style: none;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,7 +12,6 @@
       rgba(47, 48, 58, 0.4) 100%
     ),
     url("../images/mobile_background_img.jpg");
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -46,6 +44,7 @@
     }
   }
 }
+
 .main-header {
   font-family: "Roboto";
   font-weight: 900;
@@ -59,6 +58,7 @@
   align-items: center;
   margin: 0;
 }
+
 .main-button {
   list-style: none;
   letter-spacing: 0.06em;
@@ -68,6 +68,7 @@
   justify-content: center;
   margin: 0 auto;
 }
+
 @media (min-width: 481px) and (max-width: 768px) {
   .main-section {
     background-image: linear-gradient(
@@ -79,6 +80,7 @@
     min-width: 768px;
   }
 }
+
 @media (min-width: 769px) {
   .main-section {
     background-image: linear-gradient(
@@ -90,6 +92,7 @@
     max-width: 1200px;
     margin: 0 auto;
   }
+
   .container {
     margin: 0 auto;
     min-width: 1200px;

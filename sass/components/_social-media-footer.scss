@@ -3,12 +3,12 @@
     text-transform: uppercase;
     color: var(--headerbackground-color);
     padding-top: 60px;
-
     font-weight: 700;
     margin: 0 auto;
     width: 146px;
     text-align: center;
   }
+
   &__social-media-background {
     display: flex;
     background-color: var(--smediafooter-color);
@@ -33,10 +33,12 @@
     padding-left: 0;
     justify-content: center;
   }
+
   &__social-media-icon {
     fill: var(--headerbackground-color);
   }
 }
+
 @media (min-width: 481px) and (max-width: 768px) {
   .footer {
     &__header {

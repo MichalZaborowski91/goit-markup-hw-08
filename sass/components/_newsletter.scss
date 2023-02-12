@@ -9,10 +9,12 @@
     padding-top: 109px;
     padding-left: 12px;
   }
+
   &__box {
     display: flex;
     flex-direction: column;
   }
+
   &__label {
     text-transform: uppercase;
     color: var(--headerbackground-color);
@@ -26,6 +28,7 @@
     width: 207px;
     margin: 0 auto;
   }
+
   &__input {
     height: 50px;
     border-radius: 4px;
@@ -49,6 +52,7 @@
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
+
   &__content {
     display: flex;
     padding-top: 20px;
@@ -56,11 +60,11 @@
     padding-bottom: 60px;
     padding-left: 0;
   }
+
   &__button {
     display: flex;
     position: relative;
     min-width: 200px;
-
     height: 50px;
     border: none;
     border-radius: 4px;
@@ -82,13 +86,36 @@
       left: 148px;
     }
   }
+
   &__icon-send {
     fill: rgba(255, 255, 255, 1);
   }
 }
+
 @media (min-width: 481px) and (max-width: 768px) {
   .newsletter {
     width: 450px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: 769px) {
+  .newsletter {
+    width: auto;
+    flex-direction: row;
+
+    &__input {
+      width: 358px;
+      margin: 0;
+    }
+
+    &__content {
+      padding-top: 109px;
+      padding-left: 12px;
+    }
+
+    &__label {
+      margin: 0;
+    }
   }
 }

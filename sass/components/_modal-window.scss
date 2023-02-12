@@ -6,10 +6,8 @@
   top: 93px;
   margin: 0 15px;
   padding-bottom: 40px;
-
   border-radius: 4px;
   background-color: var(--headerbackground-color);
-
   visibility: visible;
   box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024,
     0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -21,7 +19,6 @@
     align-items: center;
     justify-content: center;
     margin-left: auto;
-
     margin-right: 8px;
     background-color: inherit;
     border-radius: 50%;
@@ -31,6 +28,7 @@
     fill: rgba(0, 0, 0, 1);
     cursor: pointer;
   }
+
   &__modal-title {
     font-family: "Roboto";
     font-weight: 700;
@@ -45,6 +43,7 @@
     padding-bottom: 0px;
     margin-bottom: 0;
   }
+
   &__modal-list {
     position: relative;
     list-style: none;
@@ -57,13 +56,16 @@
     & > li {
       padding-bottom: 10px;
     }
+
     &:nth-child(4) {
       padding-bottom: 20px;
     }
+
     &:nth-child(5) {
       padding-bottom: 30px;
       display: block;
     }
+
     .modal-list__label {
       display: flex;
       flex-direction: column;
@@ -75,6 +77,7 @@
       color: rgba(117, 117, 117, 1);
       padding-bottom: 4px;
     }
+
     .modal-list__input-comment {
       display: flex;
       resize: none;
@@ -94,6 +97,7 @@
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       }
+
       &:placeholder-shown {
         padding: 12px 16px;
         font-family: "Roboto";
@@ -104,9 +108,9 @@
         color: rgba(117, 117, 117, 0.5);
       }
     }
+
     .modal-list__input {
       width: 100%;
-
       height: 40px;
       border-radius: 4px;
       border: 1px solid rgba(33, 33, 33, 0.2);
@@ -130,6 +134,7 @@
       }
     }
   }
+
   &__submit-button {
     width: 200px;
     height: 50px;
@@ -147,10 +152,10 @@
     text-align: center;
     color: rgba(255, 255, 255, 1);
     padding: 0 0;
-
     cursor: pointer;
   }
 }
+
 .is-hidden {
   pointer-events: none;
   visibility: hidden;
@@ -171,6 +176,7 @@
   transition-delay: 0;
   transition-timing-function: linear;
 }
+
 .form-icon {
   display: flex;
   position: absolute;
@@ -180,13 +186,16 @@
   &--email {
     top: 177px;
   }
+
   &--phone {
     top: 110px;
   }
+
   &--person {
     top: 41px;
   }
 }
+
 .therms {
   display: block;
   position: relative;
@@ -205,10 +214,10 @@
     a {
       color: rgba(33, 150, 243, 1);
     }
+
     &::before {
       position: absolute;
       display: block;
-
       left: 40px;
       cursor: pointer;
       content: "";
@@ -218,6 +227,7 @@
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='15' fill='none'%3E%3Cpath fill='%23212121' d='M14.222 1.667v11.666H1.778V1.667h12.444Zm0-1.667H1.778C.8 0 0 .75 0 1.667v11.666C0 14.25.8 15 1.778 15h12.444C15.2 15 16 14.25 16 13.333V1.667C16 .75 15.2 0 14.222 0Z'/%3E%3C/svg%3E");
     }
   }
+
   &__checkbox {
     appearance: none;
 
@@ -230,21 +240,29 @@
     }
   }
 }
+
 .list-input {
   margin-right: 40px;
 }
+
 @media (min-width: 481px) and (max-width: 768px) {
   .modal-window {
     top: 208px;
     margin: 0 auto;
   }
+
   .backdrop {
-    min-width: 100%;
+    min-width: 768px;
   }
 }
+
 @media (min-width: 769px) {
   .modal-window {
     margin: 0 auto;
     min-width: 528px;
+  }
+
+  .backdrop {
+    min-width: 1200px;
   }
 }

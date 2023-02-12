@@ -13,9 +13,6 @@
     margin: 0 auto;
   }
 
-  /*&:last-child {
-    padding-right: 0;
-  }*/
   &__logo {
     fill: var(--smedia-color);
     transition-duration: 250ms;
@@ -23,6 +20,7 @@
     x: 58px;
     y: 16px;
   }
+
   &__background {
     border: 1px solid var(--smedia-color);
     width: 210px;
@@ -42,6 +40,7 @@
     }
   }
 }
+
 .clients-header {
   font-weight: 700;
   text-align: center;
@@ -53,8 +52,34 @@
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
+  .container {
+    min-width: 768px;
+  }
+
   .clients {
     min-width: 768px;
     margin: 60px auto 30px;
+
+    &__header {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .clients {
+    min-width: 1200px;
+
+    &__list {
+      margin: 0;
+    }
+
+    &__background {
+      width: 170px;
+    }
+
+    &__logo {
+      x: 32px;
+    }
   }
 }
