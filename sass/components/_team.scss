@@ -1,6 +1,6 @@
 .team {
-  display: flex;
   height: 100%;
+  min-width: 320px;
   width: 100vw;
   background-color: var(--buttons-color);
   margin: 0 auto;
@@ -12,30 +12,28 @@
 
   &__figure {
     margin: 0 auto;
-    max-width: 450px;
   }
 
   &__list {
-    width: 100vw;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    justify-content: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-bottom: 30px;
     margin: 0 auto;
-    padding-bottom: 60px;
   }
 
   &__item {
+    max-width: 450px;
     margin: 0 auto;
-    max-width: 270px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background: var(--headerbackground-color);
     padding: 0;
+    margin-bottom: 30px;
   }
 
   &__team-title {
@@ -59,61 +57,75 @@
 }
 
 .team-header {
-  width: 100vw;
   font-weight: 700;
   text-align: center;
   margin: 0 auto;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 42px;
   letter-spacing: 0.03em;
   padding-top: 60px;
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+.container {
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: 769px) and (max-width: 1260px) {
   .team {
-    min-width: 768px;
+    min-width: 1260px;
 
     .container {
-      min-width: 768px;
+      min-width: 1260px;
       margin: 0 auto;
     }
 
     &__list {
       flex-direction: row;
       flex-wrap: wrap;
+      gap: 20px;
       padding-bottom: 60px;
-      padding-left: 0;
-      padding-right: 0;
+      padding-left: 20;
+      padding-right: 20;
+    }
+
+    &__item {
+      flex-basis: calc((100% - 2 * 20px) / 3);
     }
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1261px) {
   .team {
-    min-width: 1200px;
+    min-width: 1261px;
     margin-top: 94px;
 
     &__list {
       flex-direction: row;
       margin: 0 auto;
       width: auto;
+      justify-content: space-evenly;
+      padding-bottom: 94px;
     }
-
+    &__item {
+      margin: 0;
+    }
     &__img {
       width: 270px;
       height: 260px;
     }
 
     .container {
-      max-width: 1200px;
+      max-width: 1261px;
       flex-wrap: nowrap;
     }
   }
 
   .team-header {
     display: block;
-    max-width: 1200px;
+    max-width: 1261px;
     margin: 0 auto;
+    margin-bottom: 50px;
   }
 }

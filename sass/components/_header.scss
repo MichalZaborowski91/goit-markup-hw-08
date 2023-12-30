@@ -4,35 +4,36 @@
   border-bottom: 1px solid #ececec;
 
   .container {
+    max-width: 768px;
     height: 60px;
     display: flex;
-    width: 100vw;
+    min-width: 320px;
     align-items: center;
     background-color: var(--headerbackground-color);
   }
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 769px) and (max-width: 1260px) {
   .header {
-    min-width: 768px;
+    min-width: 1260px;
 
     .container {
       display: flex;
       justify-content: space-between;
       height: 80px;
-      min-width: 768px;
+      min-width: 1260px;
     }
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1261px) {
   .header {
     display: flex;
     align-items: center;
     margin: 0 auto;
 
     .container {
-      max-width: 1200px;
+      max-width: 1261px;
       margin: 0 auto;
       height: 80px;
     }

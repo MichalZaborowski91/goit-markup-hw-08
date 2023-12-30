@@ -1,24 +1,16 @@
 .clients {
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-top: 60px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
+  margin: 60px auto;
+  padding-left: 0px;
   gap: 30px;
 
   &__list {
     margin: 0 auto;
-  }
-
-  &__logo {
-    fill: var(--smedia-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    x: 58px;
-    y: 16px;
   }
 
   &__background {
@@ -39,6 +31,18 @@
       }
     }
   }
+
+  &__logo {
+    fill: var(--smedia-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.container {
+  min-width: 320px;
+  max-width: 480px;
+  margin: 0px auto;
 }
 
 .clients-header {
@@ -51,24 +55,31 @@
   padding-top: 60px;
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 769px) and (max-width: 1260px) {
   .container {
-    min-width: 768px;
+    min-width: 1260px;
   }
 
   .clients {
-    min-width: 768px;
+    width: 769px;
     margin: 60px auto 30px;
+    justify-content: center;
 
-    &__header {
-      width: 100%;
+    &__list {
+      flex-basis: calc((100% - 2 * 30%) / 3);
+      margin: 0px;
+    }
+
+    &__background {
+      width: 216px;
     }
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1261px) {
   .clients {
-    min-width: 1200px;
+    width: 100%;
+    justify-content: space-evenly;
 
     &__list {
       margin: 0;
@@ -81,5 +92,8 @@
     &__logo {
       x: 32px;
     }
+  }
+  .container {
+    max-width: 1260px;
   }
 }

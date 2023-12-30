@@ -5,20 +5,21 @@
   margin-right: auto;
   display: flex;
   flex-direction: column;
+  min-width: 320px;
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 769px) and (max-width: 1260px) {
   .footer {
     margin: 0 0;
-    max-width: 768px;
+    max-width: 1260px;
     align-items: center;
-    min-width: 768px;
+    min-width: 1260px;
 
     .container {
       width: 100vw;
       align-items: center;
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
     }
 
     &__data {
@@ -27,10 +28,10 @@
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1261px) {
   .footer {
-    display: flex;
-    min-width: 1200px;
+    display: block;
+    min-width: 1261px;
     flex-direction: row;
     margin: 0 auto;
     height: 252px;
@@ -40,7 +41,7 @@
     }
 
     .container {
-      max-width: 1200px;
+      max-width: 1261px;
       display: flex;
       justify-content: space-evenly;
       align-items: baseline;

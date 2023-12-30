@@ -4,7 +4,7 @@
   max-width: 450px;
   height: auto;
   top: 93px;
-  margin: 0 15px;
+  margin: 0 auto;
   padding-bottom: 40px;
   border-radius: 4px;
   background-color: var(--headerbackground-color);
@@ -163,6 +163,7 @@
 }
 
 .backdrop {
+  min-width: 320px;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
@@ -172,6 +173,8 @@
   bottom: 0;
   left: 0;
   margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
   transition-duration: 0.5s;
   transition-delay: 0;
   transition-timing-function: linear;
@@ -197,39 +200,46 @@
 }
 
 .therms {
-  display: block;
+  display: flex;
   position: relative;
+  margin-left: 40px;
+  margin-right: 40px;
 
   &__label {
+    /*margin-left: 10px;*/
+    display: flex;
     font-family: "Roboto";
     font-weight: 400;
     font-size: 12px;
     line-height: 14.06px;
     letter-spacing: 0.03em;
     color: rgba(117, 117, 117, 1);
-    position: absolute;
-    padding-left: 64px;
-    margin-right: 40px;
+
+    p {
+      margin: 0;
+    }
 
     a {
       color: rgba(33, 150, 243, 1);
     }
 
     &::before {
-      position: absolute;
       display: block;
-      left: 40px;
+      position: absolute;
+      left: 0;
       cursor: pointer;
       content: "";
-      width: 16px;
+      min-width: 16px;
       height: 15px;
+      background-color: var(--headerbackground-color);
       transition-duration: 250ms;
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='15' fill='none'%3E%3Cpath fill='%23212121' d='M14.222 1.667v11.666H1.778V1.667h12.444Zm0-1.667H1.778C.8 0 0 .75 0 1.667v11.666C0 14.25.8 15 1.778 15h12.444C15.2 15 16 14.25 16 13.333V1.667C16 .75 15.2 0 14.222 0Z'/%3E%3C/svg%3E");
     }
   }
 
   &__checkbox {
-    appearance: none;
+    height: 15px;
+    margin-right: 10px;
 
     &:checked + .therms__label::before {
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='15' fill='none'%3E%3Crect width='16' height='15' fill='%232196F3' rx='2'/%3E%3Cpath fill='%23fff' stroke='%23fff' stroke-width='.2' d='m3.957 7.752-.069-.066-.069.065-.888.842-.076.072.076.073 3.496 3.334.069.066.069-.066 7.504-7.158.076-.073-.076-.072-.882-.841-.069-.066-.069.066-6.553 6.246-2.539-2.422Z'/%3E%3C/svg%3E");
@@ -245,24 +255,24 @@
   margin-right: 40px;
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 769px) and (max-width: 1260px) {
   .modal-window {
     top: 208px;
     margin: 0 auto;
   }
 
   .backdrop {
-    min-width: 768px;
+    min-width: 1260px;
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1261px) {
   .modal-window {
     margin: 0 auto;
     min-width: 528px;
   }
 
   .backdrop {
-    min-width: 1200px;
+    min-width: 1261px;
   }
 }
