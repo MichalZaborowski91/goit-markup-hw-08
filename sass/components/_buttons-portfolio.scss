@@ -4,6 +4,8 @@
   justify-content: center;
   gap: 8px;
   margin-bottom: 50px;
+  flex-wrap: wrap;
+  padding-left: 0px;
 
   [type="button"] {
     background-color: var(--buttons-color);
